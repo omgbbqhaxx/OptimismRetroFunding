@@ -2,18 +2,18 @@
 pragma solidity ^0.8.25;
 contract JammySwap  {
 
-  
+
   uint256 public minbetAM  = 10**13; //0.00001
   uint256 public maxbetAM = 1*(10**17); // thats means 1ETH
 
- 
+
   address payable private manager;
   uint256 private lpb = block.number;
   mapping(uint256 => address payable[] ) blockBets;
   mapping (string => uint256 ) private balances;
   mapping (uint256 => bool) private isuserwinner;
 
-  
+
 
 
 
@@ -49,36 +49,36 @@ contract JammySwap  {
          return append(uintToString(nAddrHash(_address)), uintToString(bnum));
     }
 
-    
+
 
     receive() external payable {
          if(msg.sender != manager) {
-        
+
             if(msg.value <= maxbetAM && msg.value >= minbetAM) {
               if(lpb != block.number) { for (uint256 i=0; i < blockBets[lpb].length; i++) { cashBack(lpb, blockBets[lpb][i]);}lpb = block.number; }
-             
+
                 blockBets[lpb].push(payable(msg.sender));
                 if(balances[MixAddrandSpBlock(lpb, msg.sender)] == 0) { balances[MixAddrandSpBlock(lpb, msg.sender)] = msg.value; }
-               
+
             } else {revert();}
          }
      }
 
 
-     function play() public payable {
+     function test() public payable {
          if(msg.sender != manager) {
-        
+
             if(msg.value <= maxbetAM && msg.value >= minbetAM) {
               if(lpb != block.number) { for (uint256 i=0; i < blockBets[lpb].length; i++) { cashBack(lpb, blockBets[lpb][i]);}lpb = block.number; }
-             
+
                 blockBets[lpb].push(payable(msg.sender));
                 if(balances[MixAddrandSpBlock(lpb, msg.sender)] == 0) { balances[MixAddrandSpBlock(lpb, msg.sender)] = msg.value; }
-               
+
             } else {revert();}
          }
      }
 
- 
+
     function checkReward(uint256 _bnum) private view returns(bool) {
          if(((block.number - 1) - _bnum) < 200) { //this ifblock ckeck 255 block hash problem.
              uint pb = uint256(blockhash(_bnum+1))%2; // future block hash
@@ -98,10 +98,10 @@ contract JammySwap  {
            usernewbalance = usernewbalance/ 100;
            _addr.transfer(usernewbalance * 80);
            balances[MixAddrandSpBlock(bnum, _addr)] = 0;
-     }  
+     }
   }
 
-    
+
 
   function setmaxPrice(uint256 newPrice) public {
     require(msg.sender == manager,"only manager can reach  here");
