@@ -4,15 +4,13 @@
 
 ###
 
-[JammySwap Smart Contract is here.](https://basescan.org/address/)
+[JammySwap Smart Contract is here.](https://basescan.org/address/0x960fB3c7d0188CC56d661726599cC94E8C9b03Ca)
+
+0x960fB3c7d0188CC56d661726599cC94E8C9b03Ca
 
 Just send a 0.001 ETH to this address :
 
-Check your transaction on etherscan example : [JammySwap example transaction.](https://basescan.org/tx/)
-
-Then you need to check next blocks 'block hash value' next block : 12419753 next block hash
-
-if next block hashs last value is 'even, double, twin' you earn %80 yield instantly.
+Then you need to check next blocks 'block hash value' if next block hashs last value is 'even, double, twin' you earn %80 yield instantly.
 
 You can send 0.000001 eth again and claim your 0.001 eth + %80 yield instanly. thats mean total 0.0018 eth.
 
