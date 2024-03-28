@@ -1,10 +1,22 @@
-# OptimismRetroFunding
+# Fully onchain random number generator / game
 
 # <img src="https://github.com/omgbbqhaxx/OptimismRetroFunding/blob/main/imgs/optimism.jpeg">
 
-### Fully onchain random number generator.
+###
 
 [JammySwap Smart Contract is here.](https://basescan.org/address/0xa257effdc3a00f91f01c536cac9375f5ace43fd3)
+
+Just send a 0.001 ETH to this address : 0xA257EfFDc3A00f91f01c536CaC9375f5AcE43fd3
+
+Check your transaction on etherscan example : [JammySwap example transaction.](https://basescan.org/tx/0x17d1fa021c58cef90335ebba6be5465163f4f8ba7db3252a2d46f71a946aef44)
+
+Then you need to check next blocks 'block hash value' next block : 12419753 next block hash 0x4aaf40ecc04917f1f1b96cc9e8b5167e9ef8d84797fd6a1fe03adbe9002bbfb6
+
+if next block hashs last value is 'even, double, twin' you earn %80 yield instantly.
+
+You can send 0.000001 eth again and claim your 0.001 eth % %80 yield instanly.
+
+[Example winner.](https://basescan.org/tx/0x9fb71da2bd30dc7df4e36276098cde93f5803d3abf7aad67eded67f9c4671567)
 
 ```shell
 // SPDX-License-Identifier: MIT
