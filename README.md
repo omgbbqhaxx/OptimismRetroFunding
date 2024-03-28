@@ -14,7 +14,7 @@ Then you need to check next blocks 'block hash value' next block : 12419753 next
 
 if next block hashs last value is 'even, double, twin' you earn %80 yield instantly.
 
-You can send 0.000001 eth again and claim your 0.001 eth % %80 yield instanly.
+You can send 0.000001 eth again and claim your 0.001 eth + %80 yield instanly. thats mean total 0.0018 eth.
 
 [Example winner.](https://basescan.org/tx/0x9fb71da2bd30dc7df4e36276098cde93f5803d3abf7aad67eded67f9c4671567)
 
