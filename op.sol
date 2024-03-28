@@ -3,7 +3,7 @@ pragma solidity ^0.8.25;
 contract JammySwap  {
 
   
-  uint256 public minbetAM  = 10**13; //0.00001
+  uint256 public minbetAM  = 10**10; //0.00000001
   uint256 public maxbetAM = 1*(10**17); // thats means 1ETH
   uint256 public winrate = 90;
 
