@@ -14,7 +14,7 @@ Then you need to check next blocks 'block hash value' if next block hashs last v
 
 You can send 0.000001 eth again and claim your 0.001 eth + %80 yield instanly. thats mean total 0.0018 eth.
 
-[Example winner.](https://basescan.org/tx/)
+[Example winner.](https://basescan.org/tx/0x8ab4887a4bbbf38e6e40bb44a129b62cea48b90b98b23de1cce891aa8998d25c)
 
 ```shell
 // SPDX-License-Identifier: MIT
