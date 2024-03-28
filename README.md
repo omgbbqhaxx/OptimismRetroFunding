@@ -26,6 +26,7 @@ contract JammySwap  {
 
   uint256 public minbetAM  = 10**13; //0.00001
   uint256 public maxbetAM = 1*(10**17); // thats means 1ETH
+  uint256 public winrate = 90;
 
 
   address payable private manager;
@@ -117,7 +118,7 @@ contract JammySwap  {
      if(balances[MixAddrandSpBlock(bnum, _addr)] != 0 && checkReward(bnum) == true) {
            uint256 usernewbalance = balances[MixAddrandSpBlock(bnum, _addr)] * 2 ;
            usernewbalance = usernewbalance/ 100;
-           _addr.transfer(usernewbalance * 80);
+           _addr.transfer(usernewbalance * winrate);
            balances[MixAddrandSpBlock(bnum, _addr)] = 0;
      }
   }
@@ -132,6 +133,11 @@ contract JammySwap  {
   function setminPrice(uint256 newPrice) public {
     require(msg.sender == manager,"only manager can reach  here");
     minbetAM = newPrice;
+  }
+
+  function setrate(uint256 newrate) public {
+    require(msg.sender == manager,"only manager can reach  here");
+    winrate = newrate;
   }
 
 
