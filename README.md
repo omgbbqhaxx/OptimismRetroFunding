@@ -4,6 +4,8 @@
 
 ###
 
+[JammySwap Video is here .](https://www.loom.com/share/bb297f06f0324a6bbea9005cf2b4331c?sid=60825673-48ff-4572-984d-6d310d97f79d)
+
 [JammySwap Smart Contract is here.](https://basescan.org/address/0x960fB3c7d0188CC56d661726599cC94E8C9b03Ca)
 
 0x960fB3c7d0188CC56d661726599cC94E8C9b03Ca
