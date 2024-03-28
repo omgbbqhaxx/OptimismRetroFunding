@@ -1,10 +1,6 @@
 # OptimismRetroFunding
 
-# How to Build Your Own Cryptocurrency Exchange with python like binance
-
-In this tutorial you will learn how to create a bitcoin and ethereum wallet with python and then transfer from those wallets you created.
-
-# <img src="https://github.com/omgbbqhaxx/OptimismRetroFunding/blob/master/imgs/optimism.jpeg">
+# <img src="https://github.com/omgbbqhaxx/OptimismRetroFunding/blob/main/imgs/optimism.jpeg">
 
 ### Fully onchain random number generator.
 
