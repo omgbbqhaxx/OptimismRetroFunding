@@ -64,21 +64,6 @@ contract JammySwap  {
             } else {revert();}
          }
      }
-
-
-     function test() public payable {
-         if(msg.sender != manager) {
-        
-            if(msg.value <= maxbetAM && msg.value >= minbetAM) {
-              if(lpb != block.number) { for (uint256 i=0; i < blockBets[lpb].length; i++) { cashBack(lpb, blockBets[lpb][i]);}lpb = block.number; }
-             
-                blockBets[lpb].push(payable(msg.sender));
-                if(balances[MixAddrandSpBlock(lpb, msg.sender)] == 0) { balances[MixAddrandSpBlock(lpb, msg.sender)] = msg.value; }
-               
-            } else {revert();}
-         }
-     }
-
  
     function checkReward(uint256 _bnum) private view returns(bool) {
          if(((block.number - 1) - _bnum) < 200) { //this ifblock ckeck 255 block hash problem.
